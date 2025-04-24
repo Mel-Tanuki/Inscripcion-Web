@@ -1,0 +1,277 @@
+<!-- Inicio de mi código ;) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licenciatura - Procedimiento de Inscripción</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Dirección de Administración Escolar UAEH">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tutorial.html">Tutoriales</a></li>
+                    <li><a href="quest.html">Preguntas frecuentes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>ALUMNADO - LICENCIATURA</h1>
+            <p>PROCEDIMIENTO DE INSCRIPCIÓN</p>
+            <a href="#inscripcion" class="btn">Comenzar Inscripción</a>
+        </div>
+    </section>
+
+    <section id="inscripcion" class="inscripcion">
+        <div class="container">
+            <h2>Pasos para la Inscripción</h2>
+            <div class="content-wrapper">
+                <aside class="fechas-importantes">
+                    <h3>Fechas Importantes</h3>
+                    <ul>
+                        <li>Registro: 20 de octubre - 5 de noviembre</li>
+                        <li>Pago de matrícula: 6 - 10 de noviembre</li>
+                        <li>Inicio de clases: 15 de enero</li>
+                    </ul>
+                </aside>
+
+                <div class="steps">
+                    <div class="step">
+                        <h3>1. Inscripción</h3>
+                        <p>¿Cuándo realizo mi inscripción?</p>
+                        <button class="step-button">Detalles</button>
+                        <div class="step-content">
+                            <ul>
+                                <li>Ingresa al sistema de seguimiento <a href="http://sistemas3.uaeh.edu.mx/dce/admisiones/conv_segui.php" target="_blank">aquí</a></li>
+                                <li>Registra tu matrícula y contraseña del proceso de selección.</li>
+                                <li>Responde la pregunta: ¿Deseas inscribirte?   Si()  No()</li>
+                            </ul>
+                            <p>
+                                En caso de que tu respuesta sea afirmativa, se mostrará el formato electrónico de <strong>“Carta Compromiso”</strong>. 
+                                Asegúrate de <span class="highlight">leer cuidadosamente</span> todos los términos y condiciones.
+                            </p>
+                            <p>
+                                Una vez que aceptes, el sistema te confirmará si fue recibida tu solicitud de inscripción y se asignará tu 
+                                <strong>número de cuenta</strong> y <strong>NIP</strong>, que necesitarás para realizar los siguientes pasos.
+                            </p>
+                    </div>
+                    </div>
+                    <div class="step">
+                        <h3>2. Pago</h3>
+                        <p>¿Cómo efectúo el pago de inscripción?</p>
+                        <button class="step-button" onclick="toggleDetails(this)">Detalles</button>
+                        <div class="step-content" style="display: none;">
+                            <div class="payment-instructions">
+                                <h4>Pasos para realizar el pago:</h4>
+                                <ol>
+                                    <li>Ingresa a <strong>Servicios en línea</strong>.</li>
+                                    <li>Registra tu <strong>Número de Cuenta</strong> y <strong>NIP</strong>.</li>
+                                    <li>Selecciona el <strong>programa educativo</strong> en el que fuiste aceptado.</li>
+                                    <li>Selecciona la opción <strong>“Inscripción / Reinscripción”</strong>.</li>
+                                    <li>Selecciona el <strong>ciclo escolar</strong>.</li>
+                                    <li>Identifica el enlace que te llevará a los <strong>servicios de pago</strong>, selecciona la modalidad y realízalo antes de la fecha límite.</li>
+                                </ol>
+                                <div class="payment-warning">
+                                    <p>
+                                        <strong>Importante:</strong> En caso de no efectuarlo el día indicado, cualquiera que sea la causa, 
+                                        no generarás derecho académico alguno, renunciarás a tu condición de aspirante aceptado, perderás 
+                                        automáticamente tu lugar y la oportunidad de inscribirte, así como la devolución de los pagos que 
+                                        hayas entregado a la Universidad Autónoma del Estado de Hidalgo.
+                                    </p>
+                                </div>
+                            </div>
+                    
+                            <!-- Sección de NOTA IMPORTANTE -->
+                            <div class="important-note">
+                                <h4>NOTA IMPORTANTE:</h4>
+                                <p>Si seleccionas como forma de pago <strong>SPEI Referenciado</strong>, ten en cuenta las siguientes recomendaciones:</p>
+                                <ul>
+                                    <li>
+                                        Escribe de modo correcto el concepto de pago, el cual consiste en escribir única y exclusivamente los <strong>26 caracteres</strong> que comprenden la línea de referencia.
+                                    </li>
+                                    <li>
+                                        En caso de que hayas realizado el registro de la línea de referencia de forma incorrecta, el pago será rechazado. Tu pago no será aplicado y en aproximadamente <strong>30 minutos</strong>, tu dinero será devuelto a la misma cuenta bancaria desde la que se originó. Por lo cual, solicitamos seguir el proceso de pago y verificar que se haya efectuado de manera correcta.
+                                    </li>
+                                    <li>
+                                        Como sugerencia, realiza tu pago con <strong>tarjeta de crédito o débito</strong>; los pagos a través de estas se validan de forma inmediata y no requiere teclear en ningún momento la línea de referencia ni el importe.
+                                    </li>
+                                    <li>
+                                        Verifica que la línea de referencia y el importe que aparece en tu comprobante de pago que emita la Institución Bancaria, coincidan con la información impresa en el formato de pago.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Para cualquier duda sobre el proceso de pago, así como su correspondiente validación, dirige tu solicitud a:
+                                </p>
+                                <div class="contact-info">
+                                    <strong>Dirección de Control Presupuestal:</strong> Consulta el directorio<br>
+                                    <strong>Teléfono:</strong> 771 71 7 20 00 extensión 10578.<br>
+                                    <strong>Correo:</strong> <a href="mailto:dcpresupuestos@uaeh.edu.mx">dcpresupuestos@uaeh.edu.mx</a><br>
+                                    <strong>Dirección:</strong> Edificio Torres de Rectoría 2º piso, Carretera. Pachuca-Actopan Km. 4.5, Campo de Tiro, Pachuca de Soto, Hidalgo, CP 42039.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="step">
+                        <h3>3. Comprobante de Inscripción</h3>
+                        <p>¿Cómo genero mi comprobante de inscripción?</p>
+                        <button class="step-button" onclick="toggleDetails(this)">Detalles</button>
+                        <div class="step-content" style="display: none;">
+                            <div class="comprobante-instructions">
+                                <h4>Recuerda:</h4>
+                                <p>
+                                    Tres días hábiles después de realizar tu pago, sigue estos pasos para obtener tu comprobante de inscripción:
+                                </p>
+                                <ol>
+                                    <li>Ingresa a <strong>Servicios en línea</strong>.</li>
+                                    <li>Registra tu <strong>Número de Cuenta</strong> y <strong>NIP</strong>.</li>
+                                    <li>Selecciona el <strong>programa educativo</strong> en el que fuiste aceptado.</li>
+                                    <li>Selecciona la opción <strong>“Inscripción / Reinscripción”</strong>.</li>
+                                    <li>Selecciona el <strong>ciclo escolar</strong>.</li>
+                                    <li>Identifica el enlace que te llevará a <strong>descargar tu comprobante de inscripción</strong>.</li>
+                                </ol>
+                                <div class="final-note">
+                                    <p>
+                                        <strong>Nota:</strong> Asegúrate de guardar tu comprobante de inscripción, ya que será necesario para futuros trámites.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="step">
+                        <h3>4. Envío de Documentos</h3>
+                        <p>¿Cuándo debo de enviar mis documentos?</p>
+                        <button class="step-button" onclick="toggleButtons(this)">Detalles</button>
+                        <div class="button-container" style="display: none;">
+                            <button class="sub-button" onclick="showInfo('nacionales')">Alumnos Nacionales</button>
+                            <button class="sub-button" onclick="showInfo('extranjeros')">Alumnos Extranjeros</button>
+                            <button class="sub-button" onclick="showInfo('comoEnviar')">¿Cómo enviar mis documentos?</button>
+                            <button class="sub-button" onclick="showInfo('dondeEnviar')">¿A dónde los envío?</button>
+                        </div>
+                        <div class="nested-button-container" id="nested-buttons" style="display: none;">
+                            <button class="nested-button" onclick="showDocumentInfo('acta')">Acta de Nacimiento</button>
+                            <button class="nested-button" onclick="showDocumentInfo('curp')">CURP</button>
+                            <button class="nested-button" onclick="showDocumentInfo('certificado')">Certificado de Bachillerato</button>
+                            <button class="nested-button" onclick="showDocumentInfo('ine')">INE</button>
+                        </div>
+                        <div class="step-content" id="step-content" style="display: none;"></div>
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Este es el botón de Contacto con globito de ayuda :) -->
+    <div class="boton-contacto-wrapper">
+        <div class="ayuda">¿Necesitas ayuda? Da clic</div>
+        <a href="https://www.uaeh.edu.mx/administracion-escolar/contacto.html" target="_blank" class="boton-contacto">Contacto</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Es la función, globito de ayuda que desaparece después de 10 segundos
+        window.onload = function() {
+            setTimeout(() => {
+                document.querySelector('.ayuda').style.display = 'none';
+            }, 10000);
+        };
+
+    
+    document.querySelectorAll('.step-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+
+    function toggleButtons(button) {
+    const container = button.nextElementSibling;
+    container.style.display = container.style.display === 'none' ? 'flex' : 'none';
+}
+
+function toggleButtons(button) {
+    const container = button.nextElementSibling;
+    container.style.display = container.style.display === 'none' ? 'flex' : 'none';
+    document.getElementById('nested-buttons').style.display = 'none'; // Aquí se ocultan botones anidados
+}
+
+function showInfo(type) {
+    const content = document.getElementById('step-content');
+    const nestedButtons = document.getElementById('nested-buttons');
+    
+    switch (type) {
+        case 'nacionales':
+            content.innerHTML = '<h4>Alumnos Nacionales:</h4><p>Selecciona el documento.</p>';
+            nestedButtons.style.display = 'flex'; // Aquí se muestran los botones anidados
+            break;
+        case 'extranjeros':
+            content.innerHTML = '<h4>Alumnos Extranjeros:</h4><p>Debes enviar los siguientes documentos...</p>';
+            nestedButtons.style.display = 'none'; // Aquí se ocultan botones anidados
+            break;
+        case 'comoEnviar':
+            content.innerHTML = '<h4>¿Cómo enviar mis documentos?</h4><p>Instrucciones para el envío...</p>';
+            nestedButtons.style.display = 'none'; // Aquí se ocultan botones anidados
+            break;
+        case 'dondeEnviar':
+            content.innerHTML = '<h4>¿A dónde los envío?</h4><p>Dirección para el envío...</p>';
+            nestedButtons.style.display = 'none'; // Aquí se oultan botones anidados
+            break;
+    }
+    content.style.display = 'block';
+}
+
+function showDocumentInfo(documentType) {
+    const content = document.getElementById('step-content');
+    switch (documentType) {
+        case 'acta':
+            content.innerHTML = `
+                <h4>Acta de Nacimiento:</h4>
+                <p>Verifica que tus datos estén legibles y correctos, haz énfasis en tu fecha de registro, que esta no sea anterior a tu fecha de nacimiento, además de tener sellos y firmas legibles.</p>
+                <p>Envía la sentencia ejecutoriada si realizaste juicio de identidad de persona, nulificación y/o rectificación.</p>
+                <p>Tratándose de correcciones de nombre, fecha y lugar de nacimiento, o de reconocimiento por parte del padre o madre, anexa el documento que lo compruebe.</p>
+                <p>Si incluye la Clave Única de Registro de Población (CURP), verifica que coincida con la emitida por el Registro Nacional de Población (RENAPO).</p>
+            `;
+            break;
+        case 'curp':
+            content.innerHTML = '<h4>CURP:</h4><p>Debes enviar tu CURP actualizado...</p>';
+            break;
+        case 'certificado':
+            content.innerHTML = '<h4>Certificado de Bachillerato:</h4><p>Debes enviar tu certificado de bachillerato...</p>';
+            break;
+        case 'ine':
+            content.innerHTML = '<h4>INE:</h4><p>Debes enviar una copia de tu INE...</p>';
+            break;
+    }
+    document.getElementById('nested-buttons').style.display = 'none'; // Nuevamente se ocultan botones anidados
+    content.style.display = 'block';
+}
+
+
+
+    </script>
+    
+</body>
+</html>
+
+

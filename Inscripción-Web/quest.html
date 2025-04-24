@@ -1,0 +1,127 @@
+<!-- Apartado para preguntas (considerar o no) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #8D1E1F;
+            margin-bottom: 20px;
+        }
+        .faq-section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .faq {
+            margin-bottom: 15px;
+        }
+        .faq h2 {
+            background-color: #8D1E1F;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .faq h2:hover {
+            background-color: #ffcc00;
+        }
+        .faq-content {
+            display: none;
+            padding: 10px;
+            border-left: 3px solid #8D1E1F;
+            background-color: #f9f9f9;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Dirección de Administración Escolar UAEH">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tutorial.html">Tutoriales</a></li>
+                    <li><a href="quest.html">Preguntas frecuentes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Preguntas Frecuentes</h1>
+        <div class="faq-section">
+            <div class="faq">
+                <h2 onclick="toggleFAQ(this)">¿Cómo ingreso al sistema?</h2>
+                <div class="faq-content">
+                    <p>Para ingresar al sistema, visita la sección de servicios en línea y utiliza tu Número de Cuenta y NIP.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleFAQ(this)">¿Qué documentos necesito para la inscripción?</h2>
+                <div class="faq-content">
+                    <p>Los documentos necesarios incluyen tu acta de nacimiento, CURP, certificado de bachillerato y una identificación oficial (INE).</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleFAQ(this)">¿Qué hago si tengo problemas para pagar?</h2>
+                <div class="faq-content">
+                    <p>Si experimentas problemas con el pago, asegúrate de verificar la línea de referencia y el importe en tu comprobante de pago.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleFAQ(this)">¿Cuánto tiempo tengo para enviar mis documentos?</h2>
+                <div class="faq-content">
+                    <p>Debes enviar tus documentos dentro de los plazos establecidos por la universidad, generalmente tres días hábiles después de tu pago.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h2 onclick="toggleFAQ(this)">¿A dónde envío mis documentos?</h2>
+                <div class="faq-content">
+                    <p>Los documentos deben enviarse a la dirección especificada en las instrucciones de inscripción que recibiste por correo electrónico.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(element) {
+            const content = element.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+    <div class="boton-contacto-wrapper">
+        <div class="ayuda">¿Necesitas ayuda? Da clic</div>
+        <a href="https://www.uaeh.edu.mx/administracion-escolar/contacto.html" target="_blank" class="boton-contacto">Contacto</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
